@@ -33,7 +33,7 @@ public class MultiplicationServiceImplTest {
         // when
         Multiplication multiplication = multiplicationServiceImpl.createRandomMultiplication();
 
-        // assert
+        // then
         assertThat(multiplication.getFactorA()).isEqualTo(50);
         assertThat(multiplication.getFactorB()).isEqualTo(30);
     }
@@ -48,7 +48,7 @@ public class MultiplicationServiceImplTest {
         // when
         boolean attemptResult = multiplicationServiceImpl.checkAttempt(attempt);
 
-        // assert
+        // then
         assertThat(attemptResult).isTrue();
     }
 
@@ -62,7 +62,7 @@ public class MultiplicationServiceImplTest {
         // when
         boolean attemptResult = multiplicationServiceImpl.checkAttempt(attempt);
 
-        // assert
+        // then
         assertThat(attemptResult).isFalse();
     }
 }
